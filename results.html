@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Vote tally per department</title>
+    <script type="text/javascript" src="plugins/jquery.js"></script>
+    <link rel="stylesheet" href="plugins/css/bootstrap.min.css">
+    <script type="text/javascript" src="plugins/js/bootstrap.min.js"></script>
+    <script src="vue.js"></script>
+</head>
+<body>
+<div id="app">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12"><h1>Votes per department <button class="btn btn-primary render">Render</button></h1></div>
+            <div class="col-md-6">
+              
+              <h3>ICT: </h3> 
+                <div class="progress">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="70"
+                  aria-valuemin="0" aria-valuemax="100" style="width:70%">
+                    <span class="sr-only">70% Complete</span>
+                  </div>
+                </div>
+              <h3>CBA: </h3> 
+                <div class="progress">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="70"
+                  aria-valuemin="0" aria-valuemax="100" style="width:70%">
+                    <span class="sr-only">70% Complete</span>
+                  </div>
+                </div>
+              <h3>EDUC: </h3> 
+                <div class="progress">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="70"
+                  aria-valuemin="0" aria-valuemax="100" style="width:70%">
+                    <span class="sr-only">70% Complete</span>
+                  </div>
+                </div>
+              <h3>CHM: </h3> 
+                <div class="progress">
+                  <div class="progress-bar" role="progressbar"
+                  aria-valuemin="0" aria-valuemax="100" style="width:70%">
+                    <span class="sr-only">70% Complete</span>
+                  </div>
+                </div>
+              <h3>CRIM: </h3> 
+                <div class="progress">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="70"
+                  aria-valuemin="0" aria-valuemax="100" style="width:70%">
+                    <span class="sr-only">70% Complete</span>
+                  </div>
+                </div>
+              <h3>ENG'G: </h3> 
+                <div class="progress">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="70"
+                  aria-valuemin="0" aria-valuemax="100" style="width:70%">
+                    <span class="sr-only">70% Complete</span>
+
+                  </div>
+                </div>
+              <h3>NURSING: </h3> 
+                <div class="progress">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="70"
+                  aria-valuemin="0" aria-valuemax="100" style="width:70%">
+                    <span class="sr-only">70% Complete</span>
+                  </div>
+                </div>
+
+
+            </div>        
+            <div class="col-md-6">
+                <h3>Total no. of students: </h3>
+                <h3>Already voted: </h3>
+                <h3>Pending: </h3>
+            </div>        
+        </div>
+    </div>
+
+<!--     <section class="row">
+        <div class="small-6 columns">
+            <h1 class="text-center" @click="showPlayer">YOU</h1>
+            <div class="healthbar">
+                <div class="healthbar text-center" style="background-color: green; margin: 0; color: white;" :style="[playr, {backgroundColor: pColor}]">
+                    {{ player.health }}
+                </div>
+            </div>
+        </div>
+        <div class="small-6 columns">
+            <h1 class="text-center" @click="showMonster">MONSTER</h1>
+            <div class="healthbar">
+                <div class="healthbar text-center" style="margin: 0; color: white;" :style="[monstr, {backgroundColor: mColor}]">
+                    {{ monster.health }}
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section v-show="show" class="row controls">
+        <div class="small-12 columns">
+            <button id="start-game" @click="start">START NEW GAME</button>
+        </div>
+    </section>
+
+    <section v-if="test" v-show="!show" class="row controls">
+        <div class="small-12 columns">
+            <input id="num" type="text" v-on:input="myNumber">
+            <button id="start-game" @click="hideshow">INPUT NUMBER</button>
+        </div>
+    </section>
+
+    <section v-show="game" class="row controls">
+        <div class="small-12 columns">
+            <input id="num" type="text" v-on:input="changeNum">
+            <button id="attack" @click="playerTurn('normal')">ATTACK</button>
+            <button :class="[specialAttack]" :disabled="special" @click="playerTurn('special')">SPECIAL ATTACK</button>
+            <button v-if="restart" @click="reset">PLAY AGAIN</button>
+            <button v-else id="give-up" @click="reset">GIVE UP</button>
+        </div>
+    </section>
+
+    <section v-show="game" class="row log">
+        <div class="small-12 columns">
+            <ul>
+                <li v-for="(log, key) in logs" 
+                :class="[log.turn]">
+                    {{ log.msg }}
+                </li>
+            </ul>
+        </div>
+    </section> -->
+
+</div>
+<script src="master.js"></script>
+</body>
+</html>
+
+<style type="text/css">
+    body{
+        font-family: sans-serif;
+    }
+</style>

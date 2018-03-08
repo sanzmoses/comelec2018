@@ -1,0 +1,28 @@
+INSTRUCTIONS - VOTING SYSTEM
+Developed by Vincent B. Agudera
+
+FOR ANY ERRORS contact email me vincent.agudera0@gmail.com
+
+	ADMIN
+	Username: admin
+	Password: admin
+
+	REQUIREMENTS
+	-WAMP
+	-DATABASE
+		the database will have 4 tables
+			-admin
+			-students	
+			-candidates
+			-votes
+			
+	-The List of Students provided by the registrar in MS Excel worksheet(.xlsx)
+
+	-SETTING THE DATABASE
+	1. Open WAMPSERVER
+	2. Find the "voting.sql" database in the Folder 
+	3. Go to the WAMP's 'localhost/phpmyadmin' on the browser(make sure wamp is online) 
+	4. Click the "Import" at the top-right corner
+	5. Choose File then SELECT the "voting.sql" database
+	6  after database is uploaded, Click "Go" to import the database(*note Format should be SQL).
+
